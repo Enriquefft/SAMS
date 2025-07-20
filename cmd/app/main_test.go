@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/Enriquefft/golang-template/internal/helloworld"
+	"github.com/Enriquefft/SAMS/internal/helloworld"
 )
 
 func TestMainGreet(t *testing.T) {

@@ -1,6 +1,6 @@
 # Agent Instructions
 
-This repository provides a **Go** starter template with Docker, GoReleaser, GolangCI-Lint and Nix flake support. It is meant to be cloned and adapted for your own projects. Update names, documentation and configuration files once you copy this template.
+This repository contains the code and automation for the **Self-Hosted Automated Mail Server (SAMS)** project. It includes Go utilities, Terraform modules, and Ansible playbooks to provision and manage multi-domain mail servers. Development follows strict type-safety and testing guidelines.
 
 ## Workflow
 

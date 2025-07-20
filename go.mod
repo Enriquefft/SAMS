@@ -1,4 +1,4 @@
-module github.com/Enriquefft/golang-template
+module github.com/Enriquefft/SAMS
 
 go 1.24.3
 

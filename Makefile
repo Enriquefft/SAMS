@@ -1,6 +1,6 @@
-BINARY := app
+BINARY := sams
 
-.PHONY: all build test lint fmt clean vet govulncheck
+.PHONY: all build test lint fmt clean vet govulncheck healthcheck rotator tools
 
 all: build
 
@@ -24,3 +24,11 @@ govulncheck:
 
 clean:
 	rm -rf bin
+
+healthcheck:
+	go build -o bin/healthcheck ./tools/go-mailcow-healthcheck
+
+rotator:
+	go build -o bin/rotator ./tools/go-password-rotator
+
+tools: healthcheck rotator
