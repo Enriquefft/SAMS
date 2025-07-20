@@ -1,0 +1,14 @@
+project_name: golang-template
+builds:
+  - main: ./cmd/app
+    ldflags: -X github.com/Enriquefft/golang-template/pkg/version.Version={{.Version}} -X github.com/Enriquefft/golang-template/pkg/version.Commit={{.FullCommit}} -X github.com/Enriquefft/golang-template/pkg/version.BuildDate={{.Date}}
+archives:
+  - format: tar.gz
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+checksum:
+  name_template: "checksums.txt"
+
+release:
+  github:
+    owner: Enriquefft
+    name: golang-template
