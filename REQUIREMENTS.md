@@ -290,4 +290,3 @@ variable "ssh_public_key"   { type = string }
 [mailcow]
 mailcow ansible_host=<STATIC_PUBLIC_IP> ansible_user=opc ansible_ssh_private_key_file=~/.ssh/id_rsa
 ```
-
